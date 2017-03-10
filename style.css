@@ -1,0 +1,123 @@
+@font-face {font-family: 'ubuntu-L';src:url('fonts/Ubuntu-L.ttf');}
+
+
+
+body {padding: 0;margin: 0;font-family: 'Century Gothic'}
+
+nav {position: fixed;width: 100%;background: #fff;z-index: 999}
+nav .wrapper-nav {width: 80%;margin: 0 auto;font-family: sans-serif;}
+nav img {float: left;padding-top: 20px;display: block;}
+nav ul {margin: 0;overflow: hidden;list-style-type: none;padding: 0;float: right;transition: 0.5s}
+nav ul li {font-size: 18px;transition: 0.2s;display: inline-block;padding: 30px 20px;}
+nav ul li a {text-decoration: none;color: inherit;}
+nav ul li:hover {background: #FFC153;color: #fff;cursor: pointer;}
+
+.handle {width: 100%;cursor: pointer;padding: 5px 0px;display: none;text-align: right;font-size:18px;color: #fff}
+.wrapper-handle {width: 90%;margin: 0 auto}
+
+
+header {background-image: url(img/latar.png);height: 580px ;font-family: 'Century Gothic';padding-top: 85px;background-attachment: fixed;}
+header .wrapper-header {width: 80%;margin: 0 auto}
+
+header .col-text {width: 50%;float: left;text-align: center;color: #fff;padding-top: 150px;margin: 0}
+header .col-text p {margin: 0}
+header .col-img {width: 50%;float:left;}
+header .col-img img {width: 100%;}
+
+.fitur .wrapper-fitur {width: 80%;margin: 0 auto}
+.fitur .text-fitur {text-align: center;padding:50px 0px 60px 0px;width: 50%;margin:0 auto;}
+.fitur .text-fitur h3 {font-size: 28px;margin: 0}
+.fitur .text-fitur p {opacity: 0.6}
+
+.fitur .rows {padding: 0px 0px;}
+.fitur .rows .col {width: 25%;float: left;text-align: center;box-sizing: border-box;padding: 20px;}
+.fitur .rows .col p {opacity: 0.6}
+.fitur .rows .col img {width: 60%;}
+
+
+.world {text-align: center; background-image: url(img/world.png);;padding: 130px 0px;color: #fff;background-attachment: fixed;}
+.world .wrapper-world {width: 40%;margin: 0 auto;}
+.world h3 {font-size: 29px;}
+
+.world .box {padding-top: 12px}
+.world .box a{border:solid 2px #fff;padding: 16px;transition: 0.4s}
+.world .box a:hover{background:  #FFC153}
+
+
+a {text-decoration: none;color: inherit;}
+
+
+
+.download {background: #F2F0F0;text-align: center;padding: 50px 0px}
+.download .wrapper-download {width: 50%;margin: 0 auto}
+.download h3 {margin-top: 0;font-size: 29px;}
+.download p {margin-bottom: 0;}
+
+.download .rows .col {width: 50%;float: left;box-sizing: border-box; padding: 15px}
+.download .rows {padding-top: 40px;}
+
+.download .rows .col .box1  {text-align: center;background: #FFF;padding: 1px;cursor: pointer; }
+.download .rows .col .box1 i{transition: 0.4s}
+.download .rows .col .box1:hover i{color:#FFC153}
+.download .rows .col .box2  {text-align: center; border:solid 2px;cursor: pointer;}
+.download .rows .col .box2 i{transition: 0.4s}
+.download .rows .col .box2:hover i{color:#FFC153}
+
+.costumer {background-image: url('img/yellow.png');background-attachment: fixed;padding: 110px 0px;color: #fff; text-align: center;}
+.costumer h3 {;color: #fff;font-size: 18px;text-align: center;}
+
+.costumer .wrapper-costumer {width: 60%;margin: 0 auto}
+
+footer {background: #F2F0F0;text-align: center;padding: 20px}
+footer .wrapper-footer {width: 40%;margin: 0 auto}
+footer p {margin: 0 ;color: #A6A6A6}
+footer a {color: #000;transition: 0.4s}
+footer a:hover {color:  #FFC153}
+
+
+
+@media screen and (max-width: 900px){
+	nav .wrapper-nav {width: 100%;margin: auto;}
+	header {height: 450px;}
+	header .col-img {width: 50%;float:left;display: block;padding-top: 50px}
+	header .col-text {padding-top: 100px}
+
+	.fitur .rows .col {width: 50%;}
+	.fitur .rows .col img {width: 40%}
+
+	.world .wrapper-world {width: 50%;margin: 0 auto;}
+	footer .wrapper-footer {width: 60%}
+
+
+}
+
+@media screen and (max-width:750px){
+	nav .wrapper-nav {width: 100%}
+	nav ul li {width: 100%;padding:20px 0px}
+	nav ul {float: none;max-height: 0em;}
+	nav ul li {text-align: center;}
+	nav img {float: none;margin: 0 auto;padding-bottom: 10px}
+
+	.handle {display: block;background:#FFC153; }
+	.showing {max-height: 20em;background: #F6F6F6;width: 100%}
+
+	header .col-img {width: 50%;float:none;display: block;margin: 0 auto;padding: 25px 0px}
+	header .col-text {float: none;width: 100%;padding-top: 110px}
+	header {height: 630px;padding-top: 0px;}
+
+	.fitur .wrapper-fitur {width: 95%}
+	.fitur .text-fitur {width: 90%}
+	.fitur .rows .col {width: 100%;float: none;}
+	.fitur .rows .col img {width: 30%}
+
+	.world .wrapper-world {width: 80%;margin: 0 auto;}
+
+	.download .wrapper-download {width: 70%;margin: 0 auto}
+	.download .rows .col {width: 90%;float: none;}
+
+	.costumer {min-width: 25% ;}
+
+	footer .wrapper-footer {width: 80%}
+
+
+}
